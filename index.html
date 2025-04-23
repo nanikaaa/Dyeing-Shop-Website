@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>トップ</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./stylesheet.css" />
+    <link rel="icon" type="image/svg+xml" href="./img/logo.svg" />
+  </head>
+  <body>
+    <section class="landing">
+      <div class="container">
+        <div class="logo-area">
+          <img src="./img/logo.svg" alt="松田染物店ロゴ" class="logo" />
+        </div>
+        <div class="nav-container">
+          <ul class="nav-links">
+            <li>お問い合わせ</li>
+            <li>アクセス</li>
+            <li>ブログ</li>
+            <li>ギャラリー</li>
+            <li>特徴</li>
+            <li>商品案内</li>
+            <li>松田染物店について</li>
+          </ul>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="mobile-nav">
+          <input type="checkbox" id="menu-toggle" hidden />
+          <label for="menu-toggle" class="menu-icon">
+            <div class="bar top-bar"></div>
+            <div class="bar middle-bar"></div>
+            <div class="bar bottom-bar"></div>
+          </label>
+
+          <ul class="mobile-nav-links">
+            <li>お問い合わせ</li>
+            <li>アクセス</li>
+            <li>ブログ</li>
+            <li>ギャラリー</li>
+            <li>特徴</li>
+            <li>商品案内</li>
+            <li>松田染物店について</li>
+          </ul>
+        </div>
+
+        <div class="headline" data-text="株式会社松田染物店">
+          株式会社松田染物店
+        </div>
+
+        <div class="mv-container">
+          <img
+            src="./img/home-mv.webp"
+            alt="染色作業中の画像"
+            class="home-main-visual"
+          />
+          <img
+            src="./img/dragon.png"
+            alt=""
+            class="dragon"
+            aria-hidden="true"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="intro-section">
+      <div class="container">
+        <div class="intro-box">
+          <h2>松田染物店について</h2>
+          <p>
+            創業1702年江戸時代から300有余年、 <br />
+            日本の染物文化を現代に伝える老舗染物屋 <br />
+            絶景の城、米子城の城下町として栄えた鳥取県米子市。かつて、山陰一の名城といわれた米子城の外堀だった加茂川の左岸には、染物職人が集まる紺屋（こうや）町があり、伯州綿などの藍染めで賑わっていました。<br />
+            松田染物店は江戸時代中期、この紺屋町に創業。以来、300年以上にわたって染物の伝統技法を受け継ぎ、現在は13代目・14代目の二世代が暖簾を守っています。<br />
+            地元で染物屋といえば「紺屋町の松田」と呼ばれて長年親しまれ、昔ながらの染色法とともに、紺屋という町名の由来も今日に伝えています。
+          </p>
+          <button class="intro-btn">
+            <span class="intro-line"></span>もっと見る
+          </button>
+        </div>
+        <div class="intro-images-wrapper">
+          <div class="intro-images">
+            <div class="image-wrapper">
+              <img
+                class="bg-img"
+                src="./img/Batter Mixing.webp"
+                alt=""
+                aria-hidden="true"
+              />
+              <img
+                class="main-img"
+                src="./img/Batter Mixing.webp"
+                alt="Batter Mixing"
+              />
+            </div>
+            <div class="image-wrapper">
+              <img
+                class="bg-img"
+                src="./img/Paint Piping.webp"
+                alt=""
+                aria-hidden="true"
+              />
+              <img
+                class="main-img"
+                src="./img/Paint Piping.webp"
+                alt="Paint Piping"
+              />
+            </div>
+            <div class="image-wrapper">
+              <img
+                class="bg-img"
+                src="./img/Fabric Dyeing.webp"
+                alt=""
+                aria-hidden="true"
+              />
+              <img
+                class="main-img"
+                src="./img/Fabric Dyeing.webp"
+                alt="Fabric Dyeing"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="process-section">
+      <div class="container">
+        <article class="process-item">
+          <figure class="process-image">
+            <img src="./img/process-1.webp" alt="染物作業中の職人たち" />
+          </figure>
+          <div class="process-text">
+            <h2>松田染物店について</h2>
+            <p>
+              江戸時代に創業した老舗染物店が紺屋町に佇む。職人による染色文化は今に継承。
+            </p>
+            <button class="article-btn">
+              <span class="article-line"></span>もっと見る
+            </button>
+          </div>
+        </article>
+
+        <article class="process-item reverse">
+          <figure class="process-image">
+            <img src="./img/process-2.webp" alt="商品案内用の染物製品" />
+          </figure>
+          <div class="process-text-reverse">
+            <h2>商品案内</h2>
+            <p>
+              当店では法被、暖簾、旗など様々な染物製品をご案内しています。用途に応じたご提案も可能です。
+            </p>
+            <button class="article-btn">
+              <span class="article-line"></span>もっと見る
+            </button>
+          </div>
+        </article>
+
+        <article class="process-item">
+          <figure class="process-image">
+            <img src="./img/process-3.webp" alt="店舗外観と染物展示" />
+          </figure>
+          <div class="process-text">
+            <h2>特徴</h2>
+            <p>
+              創業以来320年にわたり、藍染めと筒描き染めの技法を守り続けてきました。<br />
+              8代目が家紋の描き方を京都から持ち帰り、戦前は藍染め、戦後は筒描き染めを主軸に日本の伝統技法を継承しています。<br />
+              11代目、12代目、13代目の各代の職人は、鳥取県伝統工芸士に認定され、その技術と功績が評価されています。<br />
+              現在でも、松田染物店は手染めにこだわり、職人技による染物を提供しています。<br />
+              伝統技法を守りつつ、現代のニーズに合わせた染物を制作し、顧客の要望に応じた細部までこだわった製品を作り続けています。
+            </p>
+            <button class="article-btn">
+              <span class="article-line"></span>もっと見る
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="design-section">
+      <div class="design-container">
+        <div class="product-item tairyobata">
+          <img src="./img/design-1.webp" alt="大漁旗 banner" />
+          <p class="label">大漁旗</p>
+        </div>
+
+        <div class="product-item odanmaku">
+          <img src="./img/design-2.webp" alt="横断幕 banner" />
+          <p class="label">横断幕</p>
+        </div>
+
+        <div class="product-item noren">
+          <img src="./img/design-3.webp" alt="暖簾 curtain" />
+          <p class="label">暖簾</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="process-section">
+      <div class="container">
+        <article class="process-item reverse">
+          <figure class="process-image">
+            <img src="./img/workshop.webp" alt="瑞染堂について" />
+          </figure>
+          <div class="process-text-reverse">
+            <h2>瑞染堂について</h2>
+            <p>
+              どの商品も丁寧に職人が心を込めて染め上げています。手染めで全く同じというものがない中で、世界に１つだけの品物を。
+            </p>
+            <button class="article-btn" type="button">
+              <span class="article-line"></span>もっと見る
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery-section">
+      <div class="container">
+        <h2 class="gallery-title">ブログ</h2>
+        <ul class="gallery-list">
+          <li class="gallery-item">
+            <img src="./img/gallery-1.webp" alt="Gallery image 1" />
+            <p class="gallery-date">2024.00.00</p>
+            <h3 class="gallery-caption">Title</h3>
+          </li>
+          <li class="gallery-item">
+            <img src="./img/gallery-2.webp" alt="Gallery image 2" />
+            <p class="gallery-date">2024.00.00</p>
+            <h3 class="gallery-caption">Title</h3>
+          </li>
+          <li class="gallery-item">
+            <img src="./img/gallery-3.webp" alt="Gallery image 3" />
+            <p class="gallery-date">2024.00.00</p>
+            <h3 class="gallery-caption">Title</h3>
+          </li>
+        </ul>
+        <div class="gallery-btn-wrapper">
+          <button class="gallery-btn">
+            <i class="fa-solid fa-chevron-right btn-icon"></i>もっと見る
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="map-section">
+      <div class="container">
+        <h2 class="map-title">アクセス</h2>
+        <div class="map-wrapper">
+          <div class="map-embed">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3644.74729171486!2d133.3309218757765!3d35.42844987266978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3556f7816f71525b%3A0x128a8dd27415e08e!2z5qCq5byP5Lya56S-5p2-55Sw5p-T54mp5bqX!5e1!3m2!1sen!2sph!4v1745207639775!5m2!1sen!2sph"
+              class="map-iframe"
+              allowfullscreen=""
+              title="Google Maps showing 松田染物店 location"
+            ></iframe>
+          </div>
+
+          <div class="map-info">
+            <table>
+              <tr>
+                <th>会社名/印刷機名</th>
+                <td>松田染物店</td>
+              </tr>
+              <tr>
+                <th>住所</th>
+                <td>鳥取県米子市紺屋町47</td>
+              </tr>
+              <tr>
+                <th>電話番号（会社電話）</th>
+                <td>0859-22-3358</td>
+              </tr>
+              <tr>
+                <th>FAX</th>
+                <td>0859-32-5712</td>
+              </tr>
+              <tr>
+                <th>お問い合わせフォーム<br />受付用メールアドレス</th>
+                <td>some.matsuda@gmail.com</td>
+              </tr>
+              <tr>
+                <th>営業時間</th>
+                <td>
+                  月曜日〜金曜日<br />9:00〜17:00<br /><br />土曜日<br />9:00〜12:00
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="map-btn-wrapper">
+          <button class="map-btn">
+            <i class="fa-solid fa-chevron-right btn-icon"></i> もっと見る
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
