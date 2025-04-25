@@ -1,42 +1,105 @@
-<!-- 特徴 Hero Section -->
-<section class="features-hero">
-    <div class="features-hero-container">
-      <img src="./img/home-mv.webp" alt="染色作業中の画像" class="features-hero-img" />
-      <h1 class="features-hero-title">特徴</h1>
-    </div>
-  </section>
-  
-  <!-- Feature Content Section -->
-  <section class="features-section">
-    <div class="features-container">
-      <div class="features-intro">
-        <p>
-          松田染物店の特徴は、江戸時代から続く伝統と、職人たちの熟練した技術にあります。<br />
-          1点1点を丁寧に手染めし、お客様のご要望に応じた唯一無二の染物を制作しています。
-        </p>
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>特徴</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./stylesheet.css" />
+    <link rel="icon" type="image/svg+xml" href="./img/logo.svg" />
+  </head>
+  <body>
+    <header id="navbar"></header>
+
+    <section class="about-mainvisual">
+      <div class="about-mainvisual-wrapper">
+        <img
+          src="./img/about-mv.webp"
+          alt="特徴"
+          class="about-mainvisual-image"
+        />
+        <h1 class="about-mainvisual-title" data-text="特徴">特徴</h1>
       </div>
-  
-      <div class="features-gallery">
-        <div class="features-row">
-          <img src="./img/feature-1.webp" alt="作業風景1" class="features-img" />
-          <img src="./img/feature-2.webp" alt="作業風景2" class="features-img" />
+    </section>
+
+    <section class="feat-tech">
+      <div class="feat-container">
+        <!-- Top Description -->
+        <div class="feat-header">
+          <h2 class="feat-title">筒描き染めの技法</h2>
+          <p class="feat-text">
+            筒描き染めは、日本の伝統的な染色技法の一つであり、非常に手間のかかるプロセスを経て美しい模様を生み出します。<br />
+            まず、もち米などで作られた防染用の糊を筆筒の筒に入れ、筒の先から糊を絞り出しながら麻布に直接、模様の輪郭を描いていきます。<br />
+            糊を天日で乾かした後、シルク末オオクマの毛でできる刷毛を使って色い粉布を染め上げていきます。<br />
+            染色後、水で糊を洗い落とし天日に干すと、色の古き曲線が美しく浮かび上がり、独特の風合いが生まれます。
+          </p>
         </div>
-        <p class="features-caption">二世代に渡って染物を守る熟練の技術</p>
+
+        <!-- Images -->
+        <div class="feat-images">
+          <img
+            src="./img/technique-1.jpg"
+            alt="筒描き作業風景"
+            class="feat-img"
+          />
+          <img src="./img/technique-2.jpg" alt="染色後の布" class="feat-img" />
+        </div>
+
+        <!-- Bottom Description -->
+        <div class="feat-footer">
+          <h3 class="feat-subtitle">筒描き染めのプロセスと材料</h3>
+          <p class="feat-subtext">
+            筒描き染めのプロセスは非常に繊細で、いくつものステップを経て完成します。<br />
+            まず、防染用の糊はもち米と米ぬかを主成分とし、これを麻布の間に描きます。<br /><br />
+            これは、蝋描きとも呼ばれる技法で、生地に直接模様を描くために使用されます。<br />
+            模様が描かれた後、糊を乾かし、染料を染して着色していきます。
+          </p>
+        </div>
       </div>
-  
-      <div class="features-row-single">
-        <img src="./img/feature-3.webp" alt="家族の職人たち" class="features-img-wide" />
-        <p class="features-caption">
-          地元米子市で愛される、伝統を継ぐ家族経営の染物店
+    </section>
+
+    <section class="feat-finish">
+      <div class="feat-container">
+        <div class="feat-img-wrapper">
+          <img
+            src="./img/finish-process.jpg"
+            alt="染色作業の完成風景"
+            class="feat-full-img"
+          />
+        </div>
+        <p class="feat-finish-text">
+          シカやオオカミの毛でできた刷毛を用いることで、均一で美しい染色が可能となります。<br />
+          染色が完了すると、水で糊を洗い流し、天日に干して完成させます。<br />
+          防染糊の固さや描き方によって微妙に異なる模様が生まれ、世界に一つだけのオリジナルな染物が完成します。
         </p>
       </div>
-  
-      <div class="features-row-single">
-        <img src="./img/feature-4.webp" alt="手作業での染色" class="features-img-wide" />
-        <p class="features-caption">
-          昔ながらの手法を大切にし、全てを手作業で染め上げます。
-        </p>
+    </section>
+
+    <section class="feat-highlight">
+      <div class="feat-container">
+        <div class="feat-highlight-content">
+          <p class="feat-highlight-text">
+            筒描き染めの最大の魅力は、職人の技術と丹精込めた作業によって生まれる鮮やかな色合いと独特の模様にあります。<br />
+            筆や刷毛を使用することで、繊細で流麗なラインから大胆で力強いデザインまで、多彩な表現が可能です。<br /><br />
+            また、防染糊の使用により、染色後には白い部分がくっきりと浮かび上がり、手描きならではの温かみと深みを感じることができます。<br />
+            この技法は非常に手間がかかるため、現代では継承する職人が少なくなっていますが、その美しさと独自性から高く評価されています。
+          </p>
+          <div class="feat-highlight-img">
+            <img src="./img/highlight-process.jpg" alt="筒描き染め作業風景" />
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
-  
+    </section>
+
+    <footer id="footer"></footer>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
