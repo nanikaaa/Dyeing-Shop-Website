@@ -1614,6 +1614,35 @@ body {
   border: none;
 }
 
+/* ========Privacy Policy Page ======== */
+.privacy-policy {
+  max-width: 1600px;
+  padding: 5rem 8rem;
+  color: #333;
+  line-height: 2;
+  margin: 0 auto;
+  letter-spacing: 1.5px;
+  text-align: justify;
+}
+
+.privacy-policy h2 {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.privacy-policy p {
+  font-size: 1rem;
+  color: #333;
+  font-weight: normal;
+}
+
+.privacy-policy ol {
+  margin: 1rem 0 1rem 1.5rem;
+}
+
+
 /* ======== Responsive Media Queries ======== */
 
 /* Max Width 1440px ( Laptop L \arge) */
@@ -3996,7 +4025,6 @@ body {
     flex: 1;
     width: 470px;
   }
-
 }
 
 /* Max Width 430px (Mobile XL) */
