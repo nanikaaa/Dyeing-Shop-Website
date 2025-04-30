@@ -1432,7 +1432,6 @@ body {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
-
 .blog-card-content {
   padding: 1rem 0;
 }
@@ -3997,6 +3996,7 @@ body {
     flex: 1;
     width: 470px;
   }
+
 }
 
 /* Max Width 430px (Mobile XL) */
