@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>アクセス</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./stylesheet.css" />
+    <link rel="icon" type="image/svg+xml" href="./img/logo.svg" />
+  </head>
+
+  <body>
+    <header id="navbar"></header>
+
+    <section class="about-mainvisual">
+      <div class="about-mainvisual-wrapper">
+        <img
+          src="./img/about-mv.webp"
+          alt="お問い合わせ確認"
+          class="about-mainvisual-image"
+        />
+        <h1 class="about-mainvisual-title" data-text="お問い合わせ確認">お問い合わせ確認</h1>
+      </div>
+    </section>
+
+    <section class="contact-check-section">
+        <h2>下記の内容にお間違いないかご確認いただいたのち、送信してください。</h2>
+      
+        <table class="contact-check-table">
+          <tr><th>お名前</th><td id="fullname"></td></tr>
+          <tr><th>フリガナ</th><td id="furigana"></td></tr>
+          <tr><th>住所</th><td id="address"></td></tr>
+          <tr><th>電話番号</th><td id="phone"></td></tr>
+          <tr><th>メールアドレス</th><td id="email"></td></tr>
+          <tr><th>ご希望の返信先</th><td id="contactmethod"></td></tr>
+          <tr><th>お問い合わせ内容</th><td id="message"></td></tr>
+          <tr><th>個人情報保護方針</th><td id="agree"></td></tr>
+        </table>
+      
+        <div class="contact-check-buttons">
+          <button class="btn-back" onclick="history.back()">
+            <i class="fa-solid fa-chevron-left"></i> 入力内容を修正する
+          </button>
+          <button class="btn-submit"  onclick="location.href='contact-finish.html'">
+            送信する <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+    </section>
+
+    <footer id="footer"></footer>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

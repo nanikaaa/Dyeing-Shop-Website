@@ -166,4 +166,43 @@ document.addEventListener("DOMContentLoaded", () => {
       `;
     }
   }
+
+  // ====== CONTACT FORM PAGE FUNCTIONALITY ======
+  if (window.location.pathname.includes("contact-form.html")) {
+    const form = document.getElementById("contactForm");
+    if (form) {
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        const formData = new FormData(form);
+        const formEntries = {};
+
+        for (const [key, value] of formData.entries()) {
+          formEntries[key] = value;
+        }
+
+        localStorage.setItem("contactFormData", JSON.stringify(formEntries));
+        window.location.href = "contact-confirm.html";
+      });
+    }
+  }
+
+  // ====== CONTACT CHECK PAGE FUNCTIONALITY ======
+  if (window.location.pathname.includes("contact-confirm.html")) {
+    const data = JSON.parse(localStorage.getItem("contactFormData"));
+    if (data) {
+      const setText = (id, value) => {
+        const el = document.getElementById(id);
+        if (el) el.textContent = value || "";
+      };
+
+      setText("fullname", data.fullname);
+      setText("furigana", data.furigana);
+      setText("address", data.address);
+      setText("phone", data.phone);
+      setText("email", data.email);
+      setText("contactmethod", data.contactmethod);
+      setText("message", data.message);
+      setText("agree", data.agree ? "同意する" : "同意しない");
+    }
+  }
 });

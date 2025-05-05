@@ -1605,13 +1605,398 @@ body {
 
 .access-map-box {
   flex: 1;
-  width: 650px;
+  width: 95%;
 }
 
 .access-map-iframe {
   width: 100%;
   height: 700px;
   border: none;
+}
+
+/* ======== Contact Form Page ======== */
+.contact-form-section {
+  width: 100%;
+  padding: 4rem 10rem;
+  font-family: "Noto Serif JP", serif;
+}
+
+.form-header-text {
+  text-align: center;
+  color: #333333;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 27px;
+  margin-bottom: 2rem;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 0 auto;
+  max-width: 1600px;
+}
+.contact-form-table {
+  border-collapse: collapse;
+  font-family: "Noto Serif JP", serif;
+}
+
+.contact-form-table tr {
+  border-bottom: 1px solid #ccc;
+}
+
+.contact-form-table th {
+  font-family: "Noto Serif JP", serif;
+  width: 250px;
+  padding: 2rem 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #333333;
+  vertical-align: top;
+  text-align: left;
+  letter-spacing: 1.5px;
+}
+
+.contact-form-table td {
+  font-family: "Noto Serif JP", serif;
+  padding: 1.5rem 1rem;
+}
+
+.required-badge1 {
+  font-family: "Noto Serif JP", serif;
+
+  display: inline-block;
+  background-color: #bf0000;
+  color: white;
+  font-size: 1rem;
+  padding: 0px 8px;
+  margin-left: 101px;
+  font-weight: 400;
+}
+
+.required-badge2 {
+  font-family: "Noto Serif JP", serif;
+  display: inline-block;
+  background-color: #bf0000;
+  color: white;
+  font-size: 1rem;
+  padding: 0px 8px;
+  margin-left: 85px;
+  font-weight: 400;
+}
+
+.required-badge3 {
+  font-family: "Noto Serif JP", serif;
+  display: inline-block;
+  background-color: #bf0000;
+  color: white;
+  font-size: 1rem;
+  padding: 0px 8px;
+  margin-left: 20px;
+  font-weight: 400;
+}
+
+.required-badge4 {
+  font-family: "Noto Serif JP", serif;
+  display: inline-block;
+  background-color: #bf0000;
+  color: white;
+  font-size: 1rem;
+  padding: 0px 8px;
+  margin-left: 35px;
+  font-weight: 400;
+}
+
+.radio-inline {
+  margin-right: 20px;
+  font-size: 1rem;
+}
+
+.contact-form-table input[type="text"],
+.contact-form-table input[type="email"] {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  color: #333;
+}
+
+.contact-form-table textarea {
+  width: 100%;
+  max-width: 1000px;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  color: #333;
+}
+
+.contact-form-table textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.form-row {
+  font-family: "Noto Serif JP", serif;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #cccc;
+}
+
+.form-label {
+  font-family: "Noto Serif JP", serif;
+  width: 200px;
+  font-weight: bold;
+  color: #333333;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.form-input {
+  flex: 1;
+  padding: 12px 14px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  max-width: 47%;
+  background-color: #e0e0d8;
+}
+
+.form-textarea {
+  flex: 1;
+  padding: 12px 14px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  max-width: 80%;
+  background-color: #e0e0d8;
+}
+
+.form-textarea {
+  font-family: "Noto Serif JP", serif;
+  min-height: 100px;
+  resize: vertical;
+}
+
+.radio-group {
+  display: flex;
+  gap: 1rem;
+  flex: 1;
+}
+
+.checkbox-label {
+  font-family: "Noto Serif JP", serif;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex: 1;
+  font-size: 1rem;
+  color: #333333;
+}
+
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+  accent-color: #bf0000;
+}
+
+.privacy-link {
+  font-family: "Noto Serif JP", serif;
+  color: #bf0000;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.privacy-link:hover {
+  color: #bf0000;
+  text-decoration: underline;
+}
+
+.privacy-link .icon {
+  font-size: 1rem;
+  margin-left: 3px;
+}
+
+.form-button-wrapper {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.form-submit-button {
+  font-family: "Noto Serif JP", serif;
+  padding: 12px 15px;
+  width: 300px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  background: #333333;
+  color: white;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 3;
+}
+
+.form-submit-button i {
+  font-size: 1rem;
+  position: absolute;
+  right: 30px;
+  top: 15px;
+}
+
+.form-submit-button:hover {
+  background: white;
+  color: #333333;
+  border: 2px solid #333333;
+}
+
+/* ======== Contact Confirm Page ======== */
+.contact-check-section {
+  max-width: 100%;
+  padding: 4rem 15rem;
+  margin: 0 auto;
+  font-family: "Noto Serif JP", serif;
+}
+
+.contact-check-section h2 {
+  font-family: "Noto Serif JP", serif;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.contact-check-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.contact-check-table th,
+.contact-check-table td {
+  padding: 1.5rem;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid #ccc;
+}
+
+.contact-check-table th {
+  font-family: "Noto Serif JP", serif;
+  width: 30%;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.contact-check-table td {
+  font-family: "Noto Serif JP", serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  word-break: break-word;
+}
+
+.contact-check-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.btn-back,
+.btn-submit {
+  margin-top: 4rem;
+  font-family: "Noto Serif JP", serif;
+  padding: 12px 15px;
+  width: 300px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  background: #333333;
+  color: white;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 3;
+}
+
+.btn-back {
+  background: white;
+  color: #333333;
+  border: 1px solid #333333;
+}
+
+.btn-back:hover {
+  background-color: #3838388a;
+}
+
+.btn-submit:hover {
+  background-color: #ffffff57;
+  border: 1px solid #333333;
+  color: #333333;
+}
+
+.btn-back i {
+  font-size: 16px;
+  margin: 0 5px;
+}
+
+.btn-submit i {
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+/* ======== Conatct Finish Page ======== */
+.contact-finish-section {
+  max-width: 100%;
+  padding: 6rem 2rem;
+  text-align: center;
+  font-family: "Noto Serif JP", serif;
+  background-color: #e7e6de;
+}
+
+.contact-finish-section h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.contact-finish-message {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 3rem;
+}
+
+.contact-finish-button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-back-home {
+  display: flex;
+  position: relative;
+  align-items: center;
+  gap: 0.5rem;
+  width: 300px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  justify-content: center;
+}
+
+.btn-back-home i {
+  font-size: 1rem;
+  position: absolute;
+  left: 40px;
+}
+
+.btn-back-home:hover {
+  background-color: #555;
 }
 
 /* ========Privacy Policy Page ======== */
@@ -1642,6 +2027,49 @@ body {
   margin: 1rem 0 1rem 1.5rem;
 }
 
+/* ======== Sitemap Page ======== */
+.sitemap-section {
+  max-width: 1600px;
+  padding: 4rem 10rem;
+  font-family: "Noto Serif JP", serif;
+  margin: 0 auto;
+}
+
+.sitemap-list {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+}
+
+.sitemap-list li {
+  margin: 1rem 0;
+  border-bottom: 1px solid #ddd;
+  transition: transform 0.2s ease;
+}
+
+.sitemap-list li a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  color: #1f1f1f;
+  padding: 0.5rem;
+  transition: color 0.3s, padding-left 0.3s;
+}
+
+.sitemap-list li a:hover {
+  color: #bf0000;
+  padding-left: 1.5rem;
+}
+
+.sitemap-list i {
+  transition: transform 0.3s;
+}
+
+.sitemap-list li a:hover i {
+  transform: translateX(5px);
+}
 
 /* ======== Responsive Media Queries ======== */
 
@@ -1729,6 +2157,15 @@ body {
   .blog-detail-section {
     background-color: #e0e0d8;
     padding: 4rem 15rem;
+  }
+
+  .contact-form-section {
+    max-width: 100%;
+    padding: 4rem 8rem;
+  }
+  .contact-check-section {
+    max-width: 100%;
+    padding: 4rem 10rem;
   }
 }
 
@@ -1897,6 +2334,10 @@ body {
   .access-info-table th {
     padding: 1.5rem 2rem 1.5rem 0;
   }
+  .contact-check-section {
+    max-width: 100%;
+    padding: 4rem 8rem;
+  }
 }
 
 @media (max-width: 1097px) {
@@ -1953,6 +2394,10 @@ body {
   }
   .access-info-table th {
     padding: 1rem 2rem 1rem 0;
+  }
+
+  .contact-form-section {
+    padding: 4rem 5rem;
   }
 }
 
@@ -2372,6 +2817,25 @@ body {
   .access-info-table th {
     padding: 1rem 2rem 1rem 0;
   }
+
+  .contact-form-section {
+    padding: 4rem;
+  }
+
+  .contact-check-section {
+    max-width: 100%;
+    padding: 4rem 6rem;
+  }
+
+  .privacy-policy {
+    padding: 5rem 6rem;
+  }
+  .sitemap-section {
+    padding: 4rem 5rem;
+  }
+  .sitemap-list {
+    max-width: 400px;
+  }
 }
 
 /* Max Width 913px (Tablet Landscape) */
@@ -2498,6 +2962,10 @@ body {
   }
   .access-info-table th {
     padding: 1.5rem 2rem 1.5rem 0;
+  }
+  .contact-check-section {
+    max-width: 100%;
+    padding: 4rem 5rem;
   }
 }
 
@@ -2980,6 +3448,10 @@ body {
   .access-info-table th {
     padding: 1.5rem 1.5rem 1.5rem 0;
   }
+  .contact-check-section {
+    max-width: 100%;
+    padding: 4rem;
+  }
 }
 /* Max Width 820px (Tablet iPad Air) */
 @media (max-width: 821px) {
@@ -3343,6 +3815,9 @@ body {
 
   .access-info-table th {
     padding: 1rem 4rem 1rem 0;
+  }
+  .privacy-policy {
+    padding: 4rem;
   }
 }
 
@@ -3733,6 +4208,60 @@ body {
     width: 100%;
     height: 200px;
   }
+
+  .contact-form-table tr,
+  .contact-check-table tr {
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-form-table th {
+    padding: 0.5rem 0;
+  }
+
+  .contact-form-table td {
+    padding: 0.5rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .required-badge1,
+  .required-badge2 {
+    margin-left: 1rem;
+  }
+
+  .contact-check-table th {
+    border-bottom: none;
+    padding: 1rem 0rem;
+    width: 100%;
+  }
+  .contact-check-table td {
+    padding: 0.5rem 1rem 0.2rem 0rem;
+  }
+
+  .contact-check-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0rem;
+    flex-direction: column;
+    margin: 0 auto;
+    align-content: center;
+    align-items: center;
+  }
+  .btn-back,
+  .btn-submit {
+    margin-top: 2rem;
+  }
+  .contact-finish-section {
+    padding: 6rem;
+  }
+  .btn-back-home {
+    width: 250px;
+  }
+  .btn-back-home i {
+    left: 30px;
+  }
 }
 
 /* Max Width 541px (Tablet Portrait) */
@@ -4020,10 +4549,34 @@ body {
   .flex-gallery-item {
     width: 80%;
   }
-
-  .access-map-box {
-    flex: 1;
-    width: 470px;
+  .contact-form-section {
+    padding: 3rem;
+  }
+  .form-submit-button {
+    padding: 10px;
+    width: 250px;
+  }
+  .btn-back,
+  .btn-submit {
+    width: 240px;
+  }
+  .btn-back {
+    margin-top: 2.5rem;
+  }
+  .btn-submit {
+    margin-top: 1rem;
+  }
+  .contact-finish-section {
+    padding: 4rem;
+  }
+  .btn-back-home {
+    width: 230px;
+  }
+  .btn-back-home i {
+    left: 20px;
+  }
+  .privacy-policy {
+    padding: 3rem;
   }
 }
 
@@ -4281,9 +4834,84 @@ body {
     text-align: center;
   }
 
-  .access-map-box {
-    flex: 1;
-    width: 360px;
+  .access-info-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .access-info-table tr {
+    display: block;
+    padding-bottom: 1rem;
+  }
+
+  .access-info-table th,
+  .access-info-table td {
+    display: block;
+    text-align: left;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .access-info-table th {
+    font-weight: bold;
+    color: #333;
+    font-size: 1rem;
+  }
+
+  .access-info-table td {
+    color: #555;
+  }
+  .access-detail-section {
+    padding: 3rem 1rem;
+  }
+  .access-map-iframe {
+    width: 100%;
+    height: 350px;
+    border: none;
+  }
+  .contact-form-section {
+    padding: 2rem;
+  }
+  .form-submit-button {
+    padding: 10px;
+    width: 200px;
+  }
+  .form-submit-button i {
+    right: 10px;
+  }
+  .contact-finish-section {
+    padding: 3rem;
+  }
+  .btn-back-home {
+    width: 190px;
+    padding: 10px 8px;
+    font-size: 0.9rem;
+  }
+
+  .btn-back-home i {
+    top: 17px;
+    left: 15px;
+    font-size: 0.8rem;
+  }
+  .privacy-policy {
+    padding: 2rem;
+    letter-spacing: 0px;
+  }
+  .privacy-policy h2 {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  .sitemap-section {
+    padding: 3rem;
+  }
+  .sitemap-list {
+    max-width: 250px;
+  }
+  .sitemap-list li a {
+    padding: 0;
+  }
+  .contact-finish-section h2 {
+    font-size: 1.2rem;
   }
 }
 
@@ -4588,6 +5216,18 @@ body {
     width: 200px;
     padding: 0.5rem 1.5rem;
   }
+  .form-wrapper {
+    gap: 1rem;
+  }
+
+  .checkbox-label {
+    gap: 0px;
+    font-size: 0.9rem;
+  }
+  .contact-check-section {
+    max-width: 100%;
+    padding: 3rem;
+  }
 }
 
 /* Max Width 375px (Mobile M) */
@@ -4755,10 +5395,31 @@ body {
   .grid-gallery-img {
     width: 90%;
   }
+  .contact-check-section {
+    max-width: 100%;
+    padding: 2rem;
+  }
+  .btn-back,
+  .btn-submit {
+    width: 220px;
+    padding: 10px 13px;
+  }
+  .contact-finish-section {
+    padding: 2rem;
+  }
+  .btn-back-home {
+    width: 190px;
+    padding: 10px 8px;
+    font-size: 0.9rem;
+  }
 
-  .access-map-box {
-    flex: 1;
-    width: 315px;
+  .btn-back-home i {
+    top: 17px;
+    left: 13px;
+    font-size: 0.8rem;
+  }
+  .sitemap-section {
+    padding: 2rem;
   }
 }
 
@@ -4825,9 +5486,33 @@ body {
     width: 100%;
     height: 200px;
   }
-  .access-map-box {
-    flex: 1;
-    width: 280px;
-    height: auto;
+  .contact-form-section {
+    padding: 1.5rem;
+  }
+  .checkbox-label {
+    font-size: 0.9rem;
+  }
+  .contact-check-section {
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+  .btn-back,
+  .btn-submit {
+    width: 200px;
+    padding: 8px 10px;
+  }
+  .contact-finish-section {
+    padding: 1.5rem;
+  }
+  .btn-back-home {
+    width: 180px;
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+
+  .btn-back-home i {
+    top: 13px;
+    left: 13px;
+    font-size: 0.8rem;
   }
 }
